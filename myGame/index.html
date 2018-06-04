@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>myGame</title>
+	<style>
+		body{
+			margin:0;
+		}
+		canvas{
+			margin:0 auto;
+		}
+	</style>
+</head>
+<body>
+	<script type="text/javascript" src="js/phaser.min.js"></script>
+	<script type="text/javascript" src="js/intro1.js"></script>
+	<script type="text/javascript" src="js/intro2.js"></script>
+	<script type="text/javascript" src="js/intro3.js"></script>
+	<script type="text/javascript" src="js/intro4.js"></script>
+	<script type="text/javascript" src="js/intro5.js"></script>
+	<script type="text/javascript" src="js/scene1.js"></script>
+	<script type="text/javascript" src="js/scene2.js"></script>
+	<script type="text/javascript" src="js/scene3.js"></script>
+	<script type="text/javascript" src="js/scene4.js"></script>
+	<script type="text/javascript" src="js/scene5.js"></script>
+	<script type="text/javascript" src="js/scene6.js"></script>
+	<script type="text/javascript" src="js/scene7.js"></script>
+	<script type="text/javascript" src="js/scene8.js"></script>
+	<script type="text/javascript" src="js/scene9.js"></script>
+	<script type="text/javascript" src="js/scene10.js"></script>
+	<script type="text/javascript" src="js/scene11.js"></script>
+	<script type="text/javascript" src="js/scene12.js"></script>
+	<script type="text/javascript" src="js/scene13.js"></script>
+	<script type="text/javascript" src="js/scene14.js"></script>
+	<script>
+		var game = new Phaser.Game(1200, 800, Phaser.AUTO, '', { preload: preload, create: create, update: update});
+		function preload(){
+			
+		};
+		function create(){
+			game.state.add("intro1",Intro1);
+			game.state.add("intro2",Intro2);
+			game.state.add("intro3",Intro3);
+			game.state.add("intro4",Intro4);
+			game.state.add("intro5",Intro5);
+			game.state.add("scene1",Scene1);
+			game.state.add("scene2",Scene2);
+			game.state.add("scene3",Scene3);
+			game.state.add("scene4",Scene4);
+			game.state.add("scene5",Scene5);
+			game.state.add("scene6",Scene6);
+			game.state.add("scene7",Scene7);
+			game.state.add("scene8",Scene8);
+			game.state.add("scene9",Scene9);
+			game.state.add("scene10",Scene10);
+			game.state.add("scene11",Scene11);
+			game.state.add("scene12",Scene12);
+			game.state.add("scene13",Scene13);
+			game.state.add("scene14",Scene14);
+			game.state.start("intro1");
+		};
+		function update(){
+			
+		}
+	</script>
+</body>
+</html>
